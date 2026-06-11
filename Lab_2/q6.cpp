@@ -1,36 +1,50 @@
 #include <iostream>
-#include <math.h>
 using namespace std;
-class converter{
-    private:
-        int inch, feet, remaining_inches;
-    public:
-        void inch_setter(int i)
-        {
-            inch = i;
-        }
-        void inches_to_feet()
-        {
-            if(inch<12){
-                feet=0;
-                remaining_inches = inch%12;
-            }
-            else{
-                feet = inch/12;
-                remaining_inches = inch%12;
-            }
-        }
-        int feet_getter(){return feet;}
-        int remaining_inch_getter(){return remaining_inches;}
-        
+
+class class_of_distance
+{
+  private:
+    int feet, inch;
+  public:
+    void distance_setter(int ft, int i)
+    {
+      feet = ft;
+      inch = i;
+    }
+
+    int feet_getter(){return feet;}
+    int inch_getter(){return inch;}
+
+    class_of_distance distance_adder(class_of_distance d1, class_of_distance d2)
+    {
+      class_of_distance d3;
+      
+      d3.inch = d1.inch + d2.inch;
+      d3.feet = d1.feet + d2.feet + d3.inch / 12;
+      d3.inch = d3.inch % 12;
+
+      return d3;
+    }
 };
+
 int main()
 {
-    converter L1; int temp_inch_holder;
-    cout<<"Enter the length in inches: ";
-    cin>>temp_inch_holder;
-    L1.inch_setter(temp_inch_holder);
-    L1.inches_to_feet();
-    cout<<"Given inches converted to feet becomes: "<<L1.feet_getter()<<" ft and "<<L1.remaining_inch_getter()<<" inches";
-    return 0;
+  class_of_distance d1, d2, d3; int temp_feet, temp_inch;
+
+  cout << "Enter distance in format feet:inch:" << endl;
+
+  cout << "Enter feet and length for Distance_1: ";
+  cin >> temp_feet >> temp_inch;
+  d1.distance_setter(temp_feet, temp_inch);
+
+  cout << "Enter feet and length for Distance_2: ";
+  cin >> temp_feet >> temp_inch;
+  d2.distance_setter(temp_feet, temp_inch);
+
+  d3 = d3.distance_adder(d1, d2);
+
+  cout << "The sum of the given two distances is as follows: " << endl
+       << d3.feet_getter() << " feet " << d3.inch_getter() << " inches";
+
+  return 0;
 }
