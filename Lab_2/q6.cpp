@@ -33,11 +33,11 @@ int main()
 
   cout << "Enter distance in format feet:inch:" << endl;
 
-  cout << "Enter feet and length for Distance_1: ";
+  cout << "Enter feet and inch for Distance_1: ";
   cin >> temp_feet >> temp_inch;
   d1.distance_setter(temp_feet, temp_inch);
 
-  cout << "Enter feet and length for Distance_2: ";
+  cout << "Enter feet and inch for Distance_2: ";
   cin >> temp_feet >> temp_inch;
   d2.distance_setter(temp_feet, temp_inch);
 
