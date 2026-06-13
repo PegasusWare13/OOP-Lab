@@ -4,18 +4,18 @@ class counter
 {
     public:
         static int count;
-        
-        static int increament()
+        static int inreament()
         {
             return count++;
         }
 };
+
 int counter::count;
+
 int main() {
     counter c1, c2;
-    cout<<c1.count;
-    //c1.count++;
-    counter::increament();
-    cout<<endl<<c2.count;
+    cout << counter::count; 
+    counter::inreament(); 
+    cout << endl << counter::count; 
     return 0;
 }
