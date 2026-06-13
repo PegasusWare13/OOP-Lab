@@ -19,3 +19,6 @@ int main() {
     cout << endl << counter::count; 
     return 0;
 }
+/* OUTPUT:
+0
+1 */

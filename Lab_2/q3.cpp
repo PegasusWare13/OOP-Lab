@@ -40,3 +40,10 @@ int main()
     cout<<"Area: "<<T.area_getter();
     return 0;
 }
+/* OUTPUT:
+For a triangle with sides: 
+a = 3.2
+b = 4.1
+c = 5.5
+Perimeter: 12.8
+Area: 6.51104 */

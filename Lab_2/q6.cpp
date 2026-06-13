@@ -48,3 +48,11 @@ int main()
 
   return 0;
 }
+/* OUTPUT:
+Enter distance in format feet:inch:
+Enter feet and inch for Distance_1: 12
+22
+Enter feet and inch for Distance_2: 31
+9
+The sum of the given two distances is as follows: 
+45 feet 7 inches */

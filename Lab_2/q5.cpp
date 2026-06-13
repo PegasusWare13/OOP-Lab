@@ -32,3 +32,8 @@ int main()
     cout<<endl<<"C = C1 + C2 = "<<C.getter_r()<<"+"<<C.getter_i()<<"i";
     return 0;
 }
+/* OUTPUT:
+For complex numbers: 
+C1: 3+4i
+C2: 5+6i
+C = C1 + C2 = 8+10i */

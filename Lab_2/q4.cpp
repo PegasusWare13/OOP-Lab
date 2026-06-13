@@ -30,3 +30,8 @@ int main()
     
     return 0;
 }
+/* OUTPUT:
+For the points: 
+X1 = 3.3 Y1 = 2.1
+X2 = 4.5 Y2 = 0.6
+Distance between these two points = 1.92094 */

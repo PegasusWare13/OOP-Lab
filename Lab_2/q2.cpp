@@ -27,3 +27,7 @@ int main()
     cout<<endl<<"Given temperature in Fahrenheit scale = "<<T1.fahrenheit_getter();
     return 0;
 }
+/* OUTPUT: 
+Enter temperature in celcius: -40
+
+Given temperature in Fahrenheit scale = -40 */

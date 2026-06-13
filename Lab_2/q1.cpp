@@ -22,3 +22,6 @@ int main()
     cout<<endl<<"Area of the circle = "<<c1.calculate_area();
     return 0;
 }
+/* OUTPUT:
+Perimeter of the circle = 34.5575
+Area of the circle = 95.0331 */

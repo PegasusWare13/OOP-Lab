@@ -52,3 +52,15 @@ int main()
   cout<<"The sum of the given two time periods is as follows: "<<endl<<t3.day_getter()<<" days "<<t3.hour_getter()<<" hours "<<t3.minute_getter()<<" minutes "<<t3.second_getter()<<" seconds ";
   return 0;
 }
+/* OUTPUT:
+Enter time in format dd:hr:min:sec:
+Enter data for Time-1: 2 
+23
+50
+400
+Enter data for Time-2: 11
+21
+33
+23
+The sum of the given two time periods is as follows: 
+14 days 21 hours 30 minutes 3 seconds  */
