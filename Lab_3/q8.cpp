@@ -7,7 +7,7 @@ class class_1
         int num_1;
     public:
         class_1(int n):num_1(n){}
-        friend int sum(class_1 num_1, class_2 num_2);
+        friend int sum(class_1 c1, class_2 c2);
         
 };
 class class_2
@@ -16,7 +16,7 @@ class class_2
         int num_2;
     public:
         class_2(int n):num_2(n){}
-        friend int sum(class_1 num_1, class_2 num_2);
+        friend int sum(class_1 c1, class_2 c2);
         
 };
 int sum(class_1 c1, class_2 c2)
